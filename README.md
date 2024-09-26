@@ -47,7 +47,7 @@ The entire site is statically generated using [@sveltejs/adapter-static](https:/
 1. Generate a static build
 
    ```bash
-   pnpm docs
+   pnpm build
    ```
 
 2. Preview the build site
@@ -69,7 +69,7 @@ For end-to-end tests powered by [Playwright](https://playwright.dev/):
 1. Build for production
 
    ```bash
-   pnpm docs
+   pnpm build
    ```
 
 2. Run the tests

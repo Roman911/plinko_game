@@ -20,9 +20,6 @@ importers:
       matter-js:
         specifier: ^0.19.0
         version: 0.19.0
-      pnpm:
-        specifier: ^9.11.0
-        version: 9.11.0
       svelte-persisted-store:
         specifier: ^0.9.2
         version: 0.9.2(svelte@4.2.15)
@@ -1351,11 +1348,6 @@ packages:
   playwright@1.44.0:
     resolution: {integrity: sha512-F9b3GUCLQ3Nffrfb6dunPOkE5Mh68tR7zN32L4jCk4FjQamgesGay7/dAAe1WaMEGV04DkdJfcJzjoCKygUaRQ==}
     engines: {node: '>=16'}
-    hasBin: true
-
-  pnpm@9.11.0:
-    resolution: {integrity: sha512-CiA/+u1aP2MkLNBkyPtYkjZsED4ygHkxj3gGLyTqjJ1QvGpHqjVnyr79gk0XDnj6J0XtHxaxMuFkNhRrdojxmw==}
-    engines: {node: '>=18.12'}
     hasBin: true
 
   postcss-import@15.1.0:
@@ -3097,8 +3089,6 @@ snapshots:
       playwright-core: 1.44.0
     optionalDependencies:
       fsevents: 2.3.2
-
-  pnpm@9.11.0: {}
 
   postcss-import@15.1.0(postcss@8.4.38):
     dependencies:
