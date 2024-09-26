@@ -189,7 +189,7 @@ class PlinkoEngine {
     const ballRadius = this.pinRadius * 1.2;
     const { friction, frictionAirByRowCount } = PlinkoEngine.ballFrictions;
     const ball = Matter.Bodies.circle(
-      479,
+      474,
       0,
       ballRadius,
       {
