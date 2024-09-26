@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { binColorsByRowCount } from '$lib/constants/game';
-  import { winRecords } from '$lib/stores/game';
+  import { binColorsByRowCount, binColorsByRowCount2 } from '$lib/constants/game';
+  import { winRecords, winRecords2 } from '$lib/stores/game';
 
   /**
    * Number of last wins to display.
@@ -8,6 +8,9 @@
   export let winCount = 4;
 
   $: lastWins = $winRecords.slice(-winCount).toReversed();
+  $: lastWins2 = $winRecords2.slice(-winCount).toReversed();
+
+
 </script>
 
 <!-- Clamps in mobile:
@@ -24,6 +27,14 @@
       style:background-color={binColorsByRowCount[rowCount].background[binIndex]}
     >
       {multiplier}{multiplier < 100 ? '×' : ''}
+    </div>
+  {/each}
+  {#each lastWins2 as { binIndex, rowCount, payout: { multiplier } }}
+    <div
+      class="flex aspect-square items-center justify-center font-bold text-gray-950"
+      style:background-color={binColorsByRowCount2[rowCount].background[binIndex]}
+    >
+      {multiplier*1.5}{multiplier < 200 ? '×' : ''}
     </div>
   {/each}
 </div>

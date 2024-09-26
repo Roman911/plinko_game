@@ -60,13 +60,13 @@ export const binProbabilitiesByRowCount: Record<RowCount, number[]> = rowCountOp
 export const binPayouts: Record<RowCount, Record<RiskLevel, number[]>> = {
   4: {
     [RiskLevel.LOW]: [5.6, 2.1, 1.1, 1, 0.5, 1, 1.1, 2.1, 5.6],
-    [RiskLevel.MEDIUM]: [1.3, 0.7, 0.4, 0.7, 1.3],
+    [RiskLevel.MEDIUM]: [1.5, 0.7, 0.4, 0.7, 1.5],
     [RiskLevel.HIGH]: [29, 4, 1.5, 0.3, 0.2, 0.3, 1.5, 4, 29],
   },
   6: {
     [RiskLevel.LOW]: [5.6, 2.1, 1.1, 1, 0.5, 1, 1.1, 2.1, 5.6],
     [RiskLevel.MEDIUM]: [1.3, 0.7, 0.4, 0.7, 1.3],
-    [RiskLevel.HIGH]: [76, 10, 3, 0.9, 0.3, 0.2, 0.3, 0.9, 3, 10, 76],
+    [RiskLevel.HIGH]: [10, 3, 76, 0.9, 0.3, 0.2, 0.3, 0.9, 76, 3, 10],
   },
   8: {
     [RiskLevel.LOW]: [5.6, 2.1, 1.1, 1, 0.5, 1, 1.1, 2.1, 5.6],
