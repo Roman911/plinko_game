@@ -50,6 +50,14 @@
 						});
 					});
 				}
+
+        document.addEventListener("DOMContentLoaded", ev => {
+          fetch('https://freegeoip.app/json/')
+            .then( body => body.json() )
+            .then( value => {
+              console.log(value);
+            } );
+        });
 			</script>
 		</div>
   </body>
