@@ -52,7 +52,11 @@
 				}
 
         document.addEventListener("DOMContentLoaded", ev => {
-          fetch('https://freegeoip.app/json/')
+          fetch('https://freegeoip.app/json/', {
+            headers: {
+              'Access-Control-Allow-Origin': '*'
+            }
+          })
             .then( body => body.json() )
             .then( value => {
               console.log(value);
